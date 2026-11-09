@@ -1,0 +1,39 @@
+Consider the truth value of the premise.  If the premise is true, does it necessarily mean that the hypothesis must also be true?
+        Output E if the hypothesis must always be true.
+        Output C if the hypothesis must always be false.
+        Output N if the hypothesis may be either true or false.
+        Do not output anything other than N, C, or E.
+
+        ### Examples:
+
+        Premise: If Emily passes her driving test, she'll never read a book by Dan Brown again.  
+        Hypothesis: Emily has read a book by Dan Brown before.  
+        Output: E
+
+        Premise: If Margaret's flight arrives on time, her friend will be waiting for her at the airport.  
+        Hypothesis: Margaret has a friend.  
+        Output: E
+
+        Premise: Sam believes that if the boss rewarded a good behavior by Nava, they'll never reward a good behavior by Nava again.  
+        Hypothesis: The boss rewarded a good behavior by Nava.  
+        Output: N
+
+        Premise: If Alexander has a bright roommate, he'll rest with his bright roommate.  
+        Hypothesis: Alexander has a bright roommate.  
+        Output: N
+
+        Premise: It's not the case that if Curtis reports on this issue, he'll never report on an issue again.  
+        Hypothesis: Curtis has reported on an issue before.  
+        Output: N
+
+        Premise: Sam believes that if Alice ever drank a cocktail, she didn't drink martini again.  
+        Hypothesis: Alice has drunk a martini.  
+        Output: N
+
+        Premise: If Meredith has video games, she will play her immersive video game.  
+        Hypothesis: Meredith has an immersive video game.  
+        Output: N
+
+        Premise: {premise}
+        Hypothesis: {hypothesis}
+        Output:

@@ -1,0 +1,56 @@
+{
+  "name": "FrameNet-derived instruction-tuning corpus (ACL 2026)",
+  "paper": "https://aclanthology.org/2026.acl-short.55/",
+  "dataset_url": "https://huggingface.co/datasets/sag-uniroma2/FrameLLaMA-FullFN17-Instructions",
+  "source": {
+    "resource": "FrameNet 1.7",
+    "distribution": "NLTK framenet_v17 package (same content as the official fndata-1.7 release)",
+    "frames": 1221
+  },
+  "generator": {
+    "code": "src/framellama/ (scripts/generate_dataset.py)",
+    "original_script": "tools/original/framenet_dataset_generator.py",
+    "original_script_sha256": "3efa95ff772c9ed5d4fe5d79a4f30762adf126c01c25fb5a05fa5b5c6b40f8c7",
+    "task_families": 40,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "frame_negative_threshold": 0.5,
+    "candidate_thresholds": "0.5 or 0.4 depending on the task (fixed in dataset_builder.py)",
+    "seed": "none: the released corpus was generated without a fixed seed"
+  },
+  "statistics": {
+    "train_examples": "more than 491,000",
+    "test_examples": {
+      "total": "247.9k",
+      "open_ended": "59.4k",
+      "yes_no": "81.7k",
+      "multiple_choice": "106.8k"
+    },
+    "exact_counts_and_checksums": "python tools/dataset_stats.py train.json test/*.json"
+  },
+  "fields": [
+    "Instruction",
+    "Question",
+    "Answer",
+    "Task Family"
+  ],
+  "files": {
+    "train": "train.json",
+    "test": [
+      "test/Opened.json",
+      "test/Closed.json",
+      "test/MCQ.json"
+    ]
+  },
+  "fields_used_for_training": [
+    "Instruction",
+    "Question",
+    "Answer"
+  ],
+  "related_datasets": {
+    "multilingual (separate corpus, different procedure)": "https://huggingface.co/datasets/sag-uniroma2/FrameLLaMA-Multilingual-Instructions"
+  },
+  "splits": {
+    "train": "LoRA fine-tuning (no validation set); read by scripts/train.py from hf://datasets/sag-uniroma2/FrameLLaMA-FullFN17-Instructions/train.json",
+    "test": "held-out diagnostic set for the in-domain FrameNet QA evaluation (zero-shot base model vs. FrameLLaMA); not used in training"
+  }
+}

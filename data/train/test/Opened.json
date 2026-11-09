@@ -1,0 +1,8 @@
+[
+    {
+        "Instruction": "Provide an accurate and well-structured answer to the question below.",
+        "Question": "Based on the description \"A Communicator or Medium assigns linguistic meaning to an Unresolved_referent thereby identifying the specific actor or entity which fulfills the answer to this question.\", identify the frame that best represents this kind of event or situation.",
+        "Answer": "The description refers to a structured situation that fits the Indicating frame because it highlights the core participants and typical actions involved. This frame captures the shared meaning across different contexts where similar events occur, aligning with how language expresses this type of situation.",
+        "Task Family": "Frame Definition"
+    }
+]

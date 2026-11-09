@@ -1,0 +1,14 @@
+[
+    {
+        "Instruction": "Provide the most appropriate factual response to the question.",
+        "Question": "Can you describe what typically happens in the \"Indicating\" frame? What kind of situation or event does the Indicating frame represent?",
+        "Answer": "The \"Indicating\" frame represents a type of situation or event in which specific participants (called frame elements) play meaningful roles. It describes a scenario where \"A Communicator or Medium assigns linguistic meaning to an Unresolved_referent thereby identifying the specific actor or entity which fulfills the answer to this question.\". This frame helps structure our understanding of how such events are typically expressed in language, highlighting both the relationships between roles and the underlying semantics of the situation.",
+        "Task Family": "Frame Definition"
+    },
+    {
+        "Instruction": "Please answer the question using correct semantic reasoning.",
+        "Question": "Can you explain the typical scenario or situation captured by the \"Indicating\" frame?",
+        "Answer": "The \"Indicating\" frame is used for situations or events where designated frame elements such as \"Time\" participate in key roles. It involves a situation in which \"A Communicator or Medium assigns linguistic meaning to an Unresolved_referent thereby identifying the specific actor or entity which fulfills the answer to this question.\". This helps structure our understanding of how language expresses such occurrences.",
+        "Task Family": "Frame Definition"
+    }
+]

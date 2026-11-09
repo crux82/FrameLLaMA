@@ -1,0 +1,12 @@
+# Task: Judge if the hypothesis necessarily follows from the premise.
+        # Consider the truth value of the premise. If the premise is true, does it necessarily mean that the hypothesis must also be true?
+
+        # Output:
+        E — choose this option if the hypothesis is necessarily true in every case.
+        C — choose this option if the hypothesis is always untrue and cannot be correct.
+        N — choose this option if the hypothesis can be true in some situations and false in others.
+        # Do not output anything other than letters N, C, or E.
+
+        Premise: {premise}
+        Hypothesis: {hypothesis}
+        # Output:

@@ -1,0 +1,10 @@
+Judge if the hypothesis necessarily follows from the premise.
+Consider the truth value of the premise. If the premise is true, does it necessarily mean that the hypothesis must also be true?
+Output E if the hypothesis must always be true.
+Output C if the hypothesis must always be false.
+Output N if the hypothesis may be either true or false.
+Do not output anything other than letters E, C, or N.
+
+Premise: {premise}
+Hypothesis: {hypothesis}
+# Output:

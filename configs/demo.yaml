@@ -1,0 +1,23 @@
+# Generation settings for one frame (Killing). Equivalent to
+#   python scripts/generate_dataset.py --frames Killing
+# and used as:
+#   python scripts/generate_dataset.py --config configs/demo.yaml
+#
+# Relative paths in config files are resolved against the repository root.
+
+framenet:
+  version: "1.7"
+
+generation:
+  # FrameNet frame names (underscores or spaces). Use "all" for every frame.
+  frames:
+    - Killing
+  max_frames: null
+
+  # Random seed. Each frame is seeded with "<seed>:<frame name>", so a frame
+  # produces the same examples whether it is generated alone or in the full run.
+  seed: 3407
+
+  # Sentence-embedding model and threshold for filtering negative frames.
+  embedding_model: all-MiniLM-L6-v2
+  negative_threshold: 0.50
