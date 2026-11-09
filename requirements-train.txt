@@ -1,0 +1,13 @@
+# Extra packages for LoRA fine-tuning (scripts/train.py, scripts/merge_lora.py).
+# Install on top of requirements.txt, preferably in a separate environment.
+#
+# scripts/train.py uses trl.DataCollatorForCompletionOnlyLM, which was removed
+# in TRL 0.20; the 0.24.0 in environment.yml does not have it.
+# TODO(Shahid): replace these ranges with the exact versions used to train the
+# released checkpoint (pip freeze of the training environment).
+-r requirements.txt
+unsloth
+trl<0.20
+peft
+accelerate
+bitsandbytes

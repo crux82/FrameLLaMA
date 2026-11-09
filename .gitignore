@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# FrameNet (licensed, not redistributed) and generated data
+data/raw/*
+!data/raw/README.md
+data/generated/*
+!data/generated/.gitkeep
+data/train/*
+!data/train/README.md
+!data/train/train.json
+!data/train/test.json
+
+# Model checkpoints and new evaluation runs
+checkpoints/
+results/runs/
+
+# Optional local copy of the Hugging Face dataset
+data/hf/
