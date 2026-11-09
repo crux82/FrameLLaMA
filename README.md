@@ -7,9 +7,6 @@
 
 [Paper](https://aclanthology.org/2026.acl-short.55/) · [Fine-tuned Model](https://huggingface.co/sag-uniroma2/FrameLLaMA-3.1-8B-Instruct-FullFN17) · [Dataset](https://huggingface.co/datasets/sag-uniroma2/FrameLLaMA-FullFN17-Instructions) · [Code](https://github.com/crux82/FrameLLaMA)
 
-> **ACTION FOR SHAHID — before release**
->
-> Remaining open items are listed in `RELEASE_CHECKLIST.md` (delete that file and these blocks before publishing).
 
 ---
 
