@@ -5,15 +5,13 @@ __pycache__/
 .venv/
 *.egg-info/
 
-# FrameNet (licensed, not redistributed) and generated data
-data/raw/*
-!data/raw/README.md
+# Generated data
 data/generated/*
 !data/generated/.gitkeep
 data/train/*
 !data/train/README.md
 !data/train/train.json
-!data/train/test.json
+!data/train/test/
 
 # Model checkpoints and new evaluation runs
 checkpoints/
